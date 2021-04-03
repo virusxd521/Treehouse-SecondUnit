@@ -1,0 +1,481 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---- Header ---- */
+
+.header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;	
+	margin: auto;
+	background-color: rgb(248, 248, 248);
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mukta', sans-serif;
+}
+
+.h1OfHeader{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 20px;
+
+	
+}
+
+
+.headerUl{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+
+.headerUl li{
+ background-color: white;
+ text-align: center;
+ border: white solid 2px;
+ margin-top: 4px;
+ padding: 10px 0;
+}
+
+
+
+/* ------ End ------ */
+
+/* ------ A Href elements ------ */
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	border-bottom: solid salmon 3px;
+	transition-duration: 0.3s;
+}
+
+
+
+
+/* ------ End ------ */
+
+
+/* ----- Main Section ----- */
+
+.sectionA{
+	width: 100%;
+	margin: auto;
+	background-color: rgb(248, 248, 248);
+}
+
+.sectionA p{
+	margin: 20px auto 50px auto;
+	font-family: 'Montserrat', sans-serif;
+	width: 90%;
+	padding-bottom: 40px;
+}
+
+
+.sectionB{
+	display: flex;
+	flex-direction: column;	
+	width: 90%;
+	margin: auto;
+}
+
+
+.firstH2OfSection2{
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mukta', sans-serif;
+}
+
+.h2OfSectionB{
+	margin: 25px 0 25px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mukta', sans-serif;
+	font-size: 20px;
+}
+
+.pOfSectionB{
+	margin-bottom: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------ End ------ */
+
+/* -------- Images -------- */
+
+
+.imgA{
+	width: 60%;
+	margin-top: 35px;
+}
+
+
+
+.img{
+	width: 100%;
+	height: auto;
+	margin: 5px auto;
+}
+
+
+
+.firstImg{
+	margin-top: 60px;
+}
+
+
+/* -------- End -------- */
+
+/* ---------- Footer ---------- */
+
+
+.footer{
+	margin: auto;
+	margin-top: 40px;
+	background-color: rgb(248, 248, 248);
+	padding-top: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mukta', sans-serif;
+}
+
+
+.footer h2{
+	margin-bottom: 40px;
+}
+
+
+.phoneInFooter, .emailInFooter{
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+
+}
+
+.phoneInFooter li, .emailInFooter li{
+	margin-left: 15px;
+}
+
+.emailInFooter li{
+	margin-top: 5px;
+}
+
+.footer p{
+	width: 80%;
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+#ulInFooter{
+	width: 90%;
+	border-top: rgb(235, 235, 235) 3px solid ;
+	display: flex;
+	padding: 25px 0;
+	justify-content: space-between;
+	margin: auto;
+
+}
+
+
+#ulInFooterB{
+	display: none;
+}
+
+.footer span{
+	color:rgba(73, 73, 73, 0.9);
+	font-weight: bold;
+}
+
+/* -------- Min width: 768 -------- */
+
+@media only screen and (min-width:768px){
+	
+	body{
+		text-align: unset;
+	}
+
+	/* ------ Header ------ */
+	
+	.headerUl{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+	}
+
+	.headerUl li{
+		margin: 0 15px;
+	}
+
+	/* --------- End --------- */
+
+	/* --------- Secrion A --------- */
+
+	.sectionA{
+		display: flex;
+		padding: 40px 0;
+	}
+
+	.sectionA p{
+		width: 50%;
+		margin: auto;
+	}
+
+	.imgA{
+		width: 30%;
+		order: 1;
+		margin: auto;
+	}
+
+	/* --------- End --------- */
+
+
+
+	/* --------- Secrion B --------- */
+
+	.sectionB{
+		margin-top: 40px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.card{	
+		width: 45%;
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	/* --------- End --------- */
+
+
+	/* --------- Footer --------- */
+
+	.footer{
+		text-align: center;
+		
+	}
+
+	.footer h2{
+		margin-bottom: 55px;
+	}
+
+	.footer p{
+		width: 70%;
+		
+	}
+	
+	.phoneInFooter, .emailInFooter{
+		display: flex;
+		justify-content: center;
+	}
+
+	.phoneInFooter li, .emailInFooter li {
+		margin: 0 15px;	
+	}
+
+	.emailInFooter li{
+		margin-top: 20px;
+	}
+
+
+	.footer span{
+		color:rgba(77, 75, 75, 0.9);
+	}
+
+	#ulInFooter{
+		display: none;
+	}
+	
+	#ulInFooterB{
+		display: flex;
+		padding: 30px 0 40px 0;
+		border-top: 1px white solid;
+
+	}
+	.pushleftElement{
+		margin-right: auto;
+		margin-left: 15px;
+	}
+
+	.footerNav{
+		margin: 0 15px;
+	}
+
+	/* --------- End --------- */
+}
+
+
+@media only screen and (min-width:1000px){
+	
+	body{
+		
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(248, 248, 248);
+		margin: auto;
+		box-sizing: border-box;
+	}
+	
+
+
+	/* ------ Header ------ */
+	
+	.header{
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.h1OfHeader{
+		text-align: unset;
+		width: 20%;
+	}
+
+	.headerUl{
+		justify-content: flex-end;
+		background-color: rgb(248, 248, 248);
+	}
+	.headerUl li{
+		background-color: rgb(248, 248, 248);
+		border: none;
+	}
+
+	/* --------- End --------- */
+
+	/* --------- Secrion A --------- */
+
+	.sectionA{
+		display: flex;
+		
+		justify-content: space-between;
+		width: 95%;
+	}
+
+	.sectionA p{
+		margin: unset;
+		padding: unset;
+		
+	}
+
+	.imgA{
+		margin: 0 35px;
+		padding: unset;
+		
+	}
+	/* --------- End --------- */
+	
+	/* --------- Secrion B --------- */
+
+	
+
+	.sectionB{
+		background-color: white;
+		width: 95%;
+		margin: auto;
+		padding: 30px 0;
+	}
+
+
+	.cardsInSection2{
+		justify-content: space-around;
+		
+	}
+
+
+	.card{
+		width: 28%;
+		margin: 10px 15px;
+		padding: unset;
+	}
+
+
+	/* --------- End --------- */
+
+
+	/* --------- Footer --------- */
+
+	.phoneInFooter{
+		display: flex;
+		justify-content: center;
+
+		
+	}
+	.phoneInFooter li{
+		margin: 0 15px;	
+		font-weight: normal;
+	}
+
+	.emailInFooter{
+		display: flex;
+		justify-content: center;
+		margin-top: 15px;
+	}
+
+	.emailInFooter li{
+		margin: 0 15px;	
+	}
+	
+
+	.footer span{
+		color:rgba(77, 75, 75, 0.9);
+		
+	}
+
+
+	/* --------- End --------- */
+
+
+
+}
+
