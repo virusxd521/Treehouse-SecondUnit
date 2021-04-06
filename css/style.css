@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	text-align: center;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -353,7 +354,7 @@ a:hover{
 }
 
 
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:1024px){
 	
 	body{
 		
@@ -428,9 +429,14 @@ a:hover{
 
 
 	.cardsInSection2{
-		justify-content: space-around;
-		
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 170vh;
+		align-items: baseline;
 	}
+
 
 
 	.card{
@@ -439,6 +445,9 @@ a:hover{
 		padding: unset;
 	}
 
+	.firstImg{
+		margin-top: 5px;
+	}
 
 	/* --------- End --------- */
 
@@ -471,8 +480,8 @@ a:hover{
 		color:rgba(77, 75, 75, 0.9);
 		
 	}
-
-
+	
+	
 	/* --------- End --------- */
 
 
