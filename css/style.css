@@ -431,9 +431,8 @@ a:hover{
 	.cardsInSection2{
 		margin-top: 40px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
-		height: 170vh;
 		align-items: baseline;
 	}
 
@@ -441,7 +440,7 @@ a:hover{
 
 	.card{
 		width: 28%;
-		margin: 10px 15px;
+		margin: auto;
 		padding: unset;
 	}
 
